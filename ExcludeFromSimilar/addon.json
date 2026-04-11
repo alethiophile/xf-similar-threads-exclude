@@ -1,0 +1,18 @@
+{
+    "legacy_addon_id": "",
+    "title": "Exclude from Similar Threads",
+    "description": "Allows moderators to exclude specific threads from appearing in similar thread listings.",
+    "version_id": 1000010,
+    "version_string": "1.0.0",
+    "dev": "alethiophile",
+    "dev_url": "",
+    "faq_url": "",
+    "support_url": "",
+    "extra_urls": [],
+    "require": {
+        "XF": [2020270, "XenForo 2.2.2+"],
+        "XFES": [2020270, "XenForo Enhanced Search 2.2.2+"],
+        "SV/ElasticSearchEssentials": [1768911023, "ElasticSearch Essentials 3.17.16+"]
+    },
+    "icon": ""
+}

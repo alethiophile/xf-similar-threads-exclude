@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template_modifications>
+  <modification type="public" template="helper_thread_options" modification_key="qqExcludeFromSimilar_helper_thread_options" description="Add 'Exclude from similar threads' checkbox to thread edit" execution_order="10" enabled="1" action="preg_replace">
+    <find><![CDATA[/(<xf:macro (?:id|name)="thread_status".*?)(<\/xf:checkboxrow>)/s]]></find>
+    <replace><![CDATA[$1
+		<xf:if is="$thread.canEditModeratorFields()">
+			<xf:option name="qq_exclude_from_similar" value="1"
+				selected="{$thread.qq_exclude_from_similar}"
+				label="{{ phrase('qq_exclude_from_similar_threads') }}"
+				hint="{{ phrase('qq_exclude_from_similar_threads_hint') }}" />
+		</xf:if>
+	$2]]></replace>
+  </modification>
+</template_modifications>
